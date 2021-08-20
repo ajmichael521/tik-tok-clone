@@ -1,0 +1,104 @@
+.videoFooter {
+  position: relative;
+  color: white;
+  bottom: 150px;
+  margin-left: 40px;
+  display: flex;
+}
+
+.videoFooter__text {
+  flex: 1;
+}
+
+.videoFooter__text > h3 {
+  padding-bottom: 20px;
+}
+
+.videoFooter__icon {
+  position: absolute;
+}
+
+.videoFooter__ticker > .ticker {
+  height: fit-content;
+  margin-left: 30px;
+  width: 60%;
+}
+
+.videoFooter__ticker p {
+  padding-top: 7px;
+}
+
+.videoFooter__text > p {
+  padding-bottom: 20px;
+}
+
+.videoFooter__ticker h1 {
+  padding-top: 7px;
+}
+
+.videoFooter__record {
+  animation: spinTheRecord infinite 5s linear;
+  height: 50px;
+  filter: invert(1);
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+
+@keyframes spinTheRecord {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .videoFooter__record {
+    position: relative;
+    top: 90px;
+  }
+  .videoFooter {
+    position: absolute;
+    top: 600px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .videoFooter {
+    position: absolute;
+    top: 630px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .videoFooter {
+    position: relative;
+    bottom: 530px;
+  }
+}
+
+@media only screen and (max-height: 812px) {
+  .videoFooter {
+    position: absolute;
+    top: 630px;
+    margin-left: 10px;
+  }
+  .videoFooter__text > p {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-height: 740px) {
+  .videoFooter {
+    top: 600px;
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-height: 670px) {
+  .videoFooter {
+    top: 520px;
+  }
+}
